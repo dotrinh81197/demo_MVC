@@ -13,8 +13,9 @@ class ProductsController extends BaseController
         $data = Products::all();
         $viewdata = array(
             "products" => $data,
+            
         );
-
+       
 
 
         $this->render("index", $viewdata);

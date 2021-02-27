@@ -25,7 +25,7 @@ if (isset($controller)) {
     $controllerName = ucwords($controller) . "Controller";
 
     $controllerInstance = new $controllerName;
-
+  
     // Gọi action
     $controllerInstance->$action();
 } else {

@@ -21,19 +21,20 @@ class Products
         $statement->execute();
         // Array associative 
         $rowdata = $statement->fetchAll();
-        $list = [];
-
-
-        foreach ($rowdata as $key) {
+      
+      $products=[];
+        foreach ($rowdata as $row) {
             $entity = new Products();
-            $entity->id = $key['id'];
-            $entity->name = $key['name'];
-            $entity->description = $key['description'];
-            $entity->sell_price = $key['sell_price'];
-            $entity->cost_price = $key['cost_price'];
-            $entity->category_id = $key['category_id'];
-            $list = $entity;
+            $entity->id = $row['id'];
+            $entity->name = $row['name'];
+            $entity->description = $row['description'];
+            $entity->sell_price = $row['sell_price'];
+            $entity->cost_price = $row['cost_price'];
+            $entity->category_id = $row['category_id'];
+            $products[] = $entity;
         }
-        return $list;
+       
+
+        return $products;
     }
 }

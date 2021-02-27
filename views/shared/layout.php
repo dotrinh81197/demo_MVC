@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeGym's Products Management</title>
 
-  <link rel="shortcut icon" href="/assets/images/CG_logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="/assets/styles/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/styles/style.css" />
+  <link rel="shortcut icon" href="assets/images/CG_logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
 </head>
 
 <body>
@@ -16,22 +16,22 @@
   <nav class="navbar navbar-light bg-light justify-content-between">
     <a class="navbar-brand" href="?controller=home&action=welcome">
       <div class="app-logo">
-        <img src="/assets/images/CG_logo.png" alt="" />
+        <img src="assets/images/CG_logo.png" alt="" />
       </div>
       Manager
     </a>
 
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link <?php showActive("home") ?>" href="?controller=home&action=welcome"> Welcome </a>
+        <a class="nav-link ?>" href="?controller=home&action=welcome"> Welcome </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link <?php showActive("products") ?>" href="?controller=products&action=index"> Products </a>
+        <a class="nav-link  ?>" href="?controller=products&action=index"> Products </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link <?php showActive("categories") ?>" href="?controller=categories&action=index"> Categories </a>
+        <a class="nav-link ?>" href="?controller=categories&action=index"> Categories </a>
       </li>
     </ul>
 
